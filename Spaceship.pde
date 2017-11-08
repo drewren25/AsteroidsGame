@@ -1,22 +1,24 @@
 class Spaceship extends Floater
 { 
   public Spaceship(){
-      corners = 6;
+      corners = 7;
       xCorners = new int[corners];
       yCorners = new int[corners];
       xCorners[0] = 8;
-      yCorners[0] = 0;
-      xCorners[1] = -8;
-      yCorners[1] = 10;
-      xCorners[2] = -4;
-      yCorners[2] = 2;
-      xCorners[3] = -17;
-      yCorners[3] = 0;
-      xCorners[4] = -4;
-      yCorners[4] = -2;
-      xCorners[5] = -8;
-      yCorners[5] = -10;
-      myColor = color(255, 0, 0);
+      yCorners[0] = -1;
+      xCorners[1] = 8;
+      yCorners[1] = 1;
+      xCorners[2] = -8;
+      yCorners[2] = 10;
+      xCorners[3] = -4;
+      yCorners[3] = 2;
+      xCorners[4] = -17;
+      yCorners[4] = 0;
+      xCorners[5] = -4;
+      yCorners[5] = -2;
+      xCorners[6] = -8;
+      yCorners[6] = -10;
+      myColor = color((int)(Math.random()*255), (int)(Math.random()*255), (int)(Math.random()*255));
       myCenterX = 400;
       myCenterY = 400;
       myDirectionX = 0;

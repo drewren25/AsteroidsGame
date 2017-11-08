@@ -24,20 +24,23 @@ public void draw()
 }
 NF.show();
   NF.move();
+  fill(255, 0, 0);
+  rect(10, 10, 170, 10);
+  //if(NF.myCenterX == Rohan.myCenterX && NF.myCenterY == Rohan.myCenterY);
 }
 public void keyPressed(){
-   if(key=='s'){ //hyperspace  
-    NF.setX((int)(Math.random()*600));
-    NF.setY((int)(Math.random()*600));
+   if(key=='s'){    //hyperspace
+    NF.setX((int)(Math.random()*800));
+    NF.setY((int)(Math.random()*800));
     NF.setDirectionX(0);
     NF.setDirectionY(0);
     NF.setPointDirection((int)(Math.random()*361));  
    }
     if(key=='d'){     //clockwise
-    NF.turn(5);
+    NF.turn(7);
     }
     if(key=='a'){     //counter 
-    NF.turn(-5);
+    NF.turn(-7);
     }
     if(key=='w'){    //accelerate
   NF.accelerate(.25);
