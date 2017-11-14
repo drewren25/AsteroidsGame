@@ -1,6 +1,6 @@
 Spaceship NF = new Spaceship();
 Stars[] bob = new Stars[400];
-Asteroid[] Rohan = new Asteroid[20];
+Asteroid[] Rohan = new Asteroid[25];
 public void setup() 
 {
   size(800, 800);
@@ -21,12 +21,22 @@ public void draw()
      for(int j = 0; j<Rohan.length; j++){
      Rohan[j].move();
      Rohan[j].show();
-}
+     }
+
 NF.show();
   NF.move();
+  int a = 170;
+   fill(255, 0, 0);
+  rect(10, 10, a, 10);
+  for(int j = 0; j<Rohan.length; j++){
+  if(NF.getX() == Rohan[j].getX() && NF.getX() == Rohan[j].getX()){ 
+    a = a - 10;     
+  redraw();{ 
   fill(255, 0, 0);
-  rect(10, 10, 170, 10);
-  //if(NF.myCenterX == Rohan.myCenterX && NF.myCenterY == Rohan.myCenterY);
+  rect(10, 10, a, 10);
+  }
+  }
+  }
 }
 public void keyPressed(){
    if(key=='s'){    //hyperspace
