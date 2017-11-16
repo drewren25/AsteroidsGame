@@ -37,12 +37,12 @@ public void keyPressed(){
     NF.setPointDirection((int)(Math.random()*361));  
    }
     if(key=='d'){     //clockwise
-    NF.turn(7);
+    NF.turn(9);
     }
     if(key=='a'){     //counter 
-    NF.turn(-7);
+    NF.turn(-9);
     }
     if(key=='w'){    //accelerate
-  NF.accelerate(.25);
+  NF.accelerate(.5);
     }
 }

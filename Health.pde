@@ -7,8 +7,8 @@ class Health{
     fill(255, 0, 0);
     rect(0, 10, a, 10);
   for(int j = 0; j<Rohan.length; j++){
-  if(dist(NF.getX(), NF.getY(), Rohan[j].getX(), Rohan[j].getY()) <= 12){
-    a = a - 4;    
+  if(dist(NF.getX(), NF.getY(), Rohan[j].getX(), Rohan[j].getY()) <= 15){
+    a = a - 5;    
   }
   }
   if(a <= 0){
