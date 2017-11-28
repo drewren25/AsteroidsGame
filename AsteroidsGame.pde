@@ -1,6 +1,6 @@
 Spaceship NF = new Spaceship();
 Stars[] bob = new Stars[400];
-Asteroid[] Rohan = new Asteroid[25];
+ArrayList <Asteroid> Rohan = new ArrayList <Asteroid>();
 Health apple = new Health();
 public void setup() 
 {
@@ -9,8 +9,8 @@ public void setup()
   for(int i = 0; i<bob.length; i++){
     bob[i] = new Stars();
   }
-  for(int j = 0; j<Rohan.length; j++){
-    Rohan[j] = new Asteroid();
+  for(int j = 0; j<25; j++){
+    Rohan.add(new Asteroid());
   }
 }
 public void draw() 
@@ -19,11 +19,10 @@ public void draw()
   for(int i = 0; i<bob.length; i++){
     bob[i].show();
      } 
-     for(int j = 0; j<Rohan.length; j++){
-     Rohan[j].move();
-     Rohan[j].show();
+     for(int j = 0; j<Rohan.size(); j++){
+     Rohan.get(j).move();
+     Rohan.get(j).show();
      }
-
 NF.show();
   NF.move();
   apple.show();
