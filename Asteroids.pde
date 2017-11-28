@@ -4,27 +4,27 @@ class Asteroid extends Floater{
     corners = 6;
     xCorners = new int[corners];
     yCorners = new int[corners];
-    xCorners[0] = 20;
+    xCorners[0] = 25;
     yCorners[0] = 0;
-    xCorners[1] = 12;
-    yCorners[1] = -12;
-    xCorners[2] = -8;
-    yCorners[2] = -8;
-    xCorners[3] = -12;
-    yCorners[3] = 4;
+    xCorners[1] = 15;
+    yCorners[1] = -15;
+    xCorners[2] = -10;
+    yCorners[2] = -10;
+    xCorners[3] = -15;
+    yCorners[3] = 5;
     xCorners[4] = 0;
     yCorners[4] = 0;
-    xCorners[5] = 12;
-    yCorners[5] = 8;
+    xCorners[5] = 15;
+    yCorners[5] = 10;
      myColor = color(100);
-      myCenterX = (int)(Math.random()*800);
-      myCenterY = (int)(Math.random()*800);
-      myDirectionX = (double)(Math.random()*5)-2;
-      myDirectionY = (double)(Math.random()*5)-2;
+      myCenterX = (int)(Math.random()*900);
+      myCenterY = (int)(Math.random()*900);
+      myDirectionX = (double)(Math.random()*6)-3;
+      myDirectionY = (double)(Math.random()*6)-3;
       myPointDirection = (int)(Math.random()*361);     
   }
-  public void move(){    //rotation for asteroids
-    turn(z);{
+  public void move(){    
+    turn(z);{        //rotation for asteroids
       z = ((int)(Math.random()*5));
     }
     super.move();
