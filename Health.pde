@@ -7,12 +7,13 @@ class Health{ //does NOT extend floater
     fill(255, 0, 0);
     rect(0, 10, a, 10);
   for(int j = 0; j<Rohan.size(); j++){
-  if(dist(NF.getX(), NF.getY(), Rohan.get(j).getX(), Rohan.get(j).getY()) <= 20){
+  if(dist(Rohan.get(j).getX(), Rohan.get(j).getY(), NF.getX(), NF.getY()) <= 23){
     a = a - 5;    
   }
   }
   if(a <= 0){
-    text("GAME OVER" , 420, 450);
+    textSize(20);
+    text("GAME OVER" , 410, 450);
     }
   }
 }
