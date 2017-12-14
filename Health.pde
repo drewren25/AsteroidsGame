@@ -13,7 +13,7 @@ class Health{ //does NOT extend floater
   }
   if(a <= 0){
     textSize(20);
-    text("GAME OVER" , 410, 450);
+    text("GAME OVER" , 400, 450);
     }
   }
 }

@@ -9,6 +9,7 @@ class Laser extends Floater{
    
 }
 public void show(){
+  noStroke();
   fill(255, 0, 0);
   ellipse((float)(myCenterX), (float)(myCenterY), 7, 7);
 }

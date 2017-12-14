@@ -10,12 +10,12 @@ class rainbowBeam extends Floater{
 }
 public void show(){
   fill((int)(Math.random()*205)+50, (int)(Math.random()*255), (int)(Math.random()*255));
-  ellipse((float)(myCenterX), (float)(myCenterY), 40, 40);
+  ellipse((float)(myCenterX), (float)(myCenterY), 50, 50);
 }
 public void move (){
     myCenterX += myDirectionX;
     myCenterY += myDirectionY;
-    if(myCenterX >width)
+  if(myCenterX >width)
     {     
       myCenterX = 0;    
     }    
@@ -31,8 +31,8 @@ public void move (){
     else if (myCenterY < 0)
     {     
       myCenterY = height;    
-    }
-  }   
+    }   
+  }      
     public void setX(int x){myCenterX = x;}
     public int getX(){return (int)myCenterX;}
     public void setY(int y){myCenterY = y;}
