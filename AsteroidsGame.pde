@@ -92,12 +92,12 @@ public void keyPressed(){
     if(key=='w'){    //accelerate
   NF.accelerate(.75);
     }
-    if(key=='1'){    //laser
+    if(key=='j'){    //laser
      for(int g = 0; g<1; g++){   
        banana.add(new Laser());
   }
     }
-    if(key == '2'){    //rainbowBeam
+    if(key == 'h'){    //rainbowBeam
       for(int i= 0; i<1; i++){
         acer.add(new rainbowBeam());
       }
